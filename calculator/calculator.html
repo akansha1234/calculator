@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animated Nav Toggle</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
+ body{
+ 	background-color:
+ }
+ .container{
+ 	border:;
+ 	margin-left:12px;
+ }
+ 
+ .table1 input{
+ 	font-size: 23px;
+ }
+
+ th, td {
+    border: 2px solid #0080ff;
+    
+}
+  .table1{
+  	margin:50px;
+  	margin-left: 514px;
+  }
+  .table2{
+  	margin:35px;
+  	margin-left:515px;
+  	margin-top: -45px;
+  }
+  .digits{
+  	padding: 8px;
+  	margin: 19px;
+  	color:;
+  	font-size: 22px;
+  }
+  #btn8,#btn12,#btn16{
+  	padding:10px;
+  	
+  }
+ 
+
+ </style>
+</head>
+<body>
+<form name="Calculator" class="container">
+
+
+<table class="table1">
+<tr>
+<td>
+
+<input type="text" id="display" name="display" style="background-color: white" disabled>
+</td>
+</tr>
+</table>
+<table class="table2">
+<tr>
+<td>
+<input type="button" id="btn1" name="number" value="1" class="digits" onclick="Calculator.display.value+='1'">
+</td>
+<td>
+<input type="button" id="btn2" name="number" value="2" class="digits" onclick="Calculator.display.value+='2'">
+</td>
+<td>
+<input type="button" id="btn3" name="number" value="3" class="digits" onclick="Calculator.display.value+='3'">
+</td>
+<td>
+<input type="button" id="btn4" name="addition" value="+" class="digits" onclick="Calculator.display.value+='+'">
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="button" id="btn5" name="number" value="4" class="digits" onclick="Calculator.display.value+='4'">
+</td>
+<td>
+<input type="button" id="btn6" name="number" value="5" class="digits" onclick="Calculator.display.value+='5'">
+</td>
+<td>
+<input type="button" id="btn7" name="number" value="6" class="digits" onclick="Calculator.display.value+='6'">
+</td>
+<td>
+<input type="button" id="btn8" name="subtract" value="-" class="digits" onclick="Calculator.display.value+='-'">
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="button" id="btn9" name="number" value="7" class="digits" onclick="Calculator.display.value+='7'">
+</td>
+<td>
+<input type="button" id="btn10" name="number" value="8" class="digits" onclick="Calculator.display.value+='8'">
+</td>
+<td>
+<input type="button" id="btn11" name="number" value="9" class="digits" onclick="Calculator.display.value+='9'">
+</td>
+<td>
+<input type="button" id="btn12" name="multiply" value="*" class="digits" onclick="Calculator.display.value+='*'">
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="button" id="btn13" name="number" value="0" class="digits" onclick="Calculator.display.value+='0'">
+</td>
+<td>
+<input type="button" id="btn14" name="doit" value="=" class="digits" onclick="Calculator.display.value=eval(Calculator.display.value)">
+</td>
+<td>
+<input type="button" id="btn15" name="clear" value="C" class="digits" onclick="Calculator.display.value=null">
+</td>
+<td>
+<input type="button" id="btn16" name="divide" value="/" class="digits" onclick="Calculator.display.value+='/'">
+</td>
+</tr>
+</table>
+
+</form>
+
+
+</body>
+</html>
